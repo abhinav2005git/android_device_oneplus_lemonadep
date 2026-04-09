@@ -15,6 +15,11 @@ $(call inherit-product, device/oneplus/lemonadep/device.mk)
 # Inherit some common PIXElOS stuff.
 $(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SHIPS_FIRMWARE := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
 PRODUCT_NAME := custom_lemonadep
 PRODUCT_DEVICE := lemonadep
 PRODUCT_MANUFACTURER := OnePlus
